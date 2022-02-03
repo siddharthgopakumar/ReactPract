@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .myComponent {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function MainContent() {
+            return ( 
+                <h1 className="myComponent">My First Component.</h1>
+            );
+        }
+        ReactDOM.render(
+            <div>
+            <h1>Hello World! from react.</h1>
+            <div>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                </ul>
+            </div>
+            <MainContent/>
+        </div>,
+            document.querySelector("#root")
+        );
+    </script>
+</body>
+</html> 
+
